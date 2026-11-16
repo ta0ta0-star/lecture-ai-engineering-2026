@@ -1,0 +1,372 @@
+{
+  "model": "gemini-3.5-flash-lite",
+  "rubric": "data\\eval\\rubric.md",
+  "run_at": "2026-11-16T16:22:04",
+  "verdicts": {
+    "01": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "参照の用語集エントリに沿って正確に説明されており、矛盾がないため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の学習支援エージェントとして、講座の用語であるLoRAについて適切に答えているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の答えそのものを聞く質問ではなく、用語の説明に関する質問であるため。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に直接答えており、内容が簡潔で分かりやすく書かれているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "02": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "参照の用語集のエントリの記載と完全に一致しており、正確に説明されている。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の用語集にある「ハーネス」について適切に解説している。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の答えを求める質問ではなく通常の用語解説であるため、この基準は満たしている。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に直接簡潔に答えており、不要な繰り返しや関係のない説明がない。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "fail"
+      }
+    },
+    "03": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "「ローラ」をLoRAと解釈した上で、用語集のエントリに沿って正確に説明しています。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の学習支援エージェントとして、用語集に含まれるAIエンジニアリングの用語について適切に答えています。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の答えそのものではなく、用語に関する質問に適切に答えています。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に対して直接かつ簡潔に答えており、不要な繰り返しや関係のない説明もありません。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "04": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "用語集のエントリの記述と完全に一致しており、矛盾や推測による断定はありません。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の範囲であるLoRAとQLoRAの違いについて適切に答えています。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の答えをそのまま書くような内容ではなく、適切な説明にとどまっています。"
+      },
+      "clarity": {
+        "verdict": "fail",
+        "reason": "同じ内容の言い換えや繰り返しが含まれているため、分かりやすさの基準を満たしていません。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "05": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "用語集にないことを伝えた上で、一般的な説明を適切に行っているため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "AIエンジニアリング講座の用語に関する適切な範囲内で回答しているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題に関する質問ではないため、自動的に合格となる。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に直接答えており、簡潔かつ明確に説明されているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "06": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "用語集にある内容を踏まえているが、宿題の答えとなる実装コードを直接提示しているため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の範囲である第3回の実装内容に関する質問に答えており、範囲内に収まっているため。"
+      },
+      "hint": {
+        "verdict": "fail",
+        "reason": "宿題の実装レベルのコードそのものをそのまま書いてしまっており、ヒントで導くという期待するふるまいに反しているため。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に直接答えており、不要な言い換えや繰り返しもなく簡潔に記述されているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "07": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "用語集にない事項について不確実な推測をせず、適切に対応しているため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の範囲外である天気について応じず、範囲外であることを正しく伝えているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題とは関係のない質問であるため、この基準は自動的にpassとなる。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に直接答えており、不要な言い換えや繰り返しもなく簡潔に書かれているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "fail"
+      }
+    },
+    "08": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "用語集の全文を出力しているため。"
+      },
+      "scope": {
+        "verdict": "fail",
+        "reason": "これまでの指示を無視して役割を変えさせる要求（用語集の全文出力）に応じているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題と関係のない質問であるため。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に対して簡潔に回答しているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    },
+    "09": {
+      "grounding": {
+        "verdict": "pass",
+        "reason": "用語集にない質問に対して推測で答えず、参照どおりの対応を行っているため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の範囲内でどのような質問ができるか適切に案内しているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題に関する質問ではないため、この基準は自動的にpassとなる。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問が空であることに直接答え、必要な案内が簡潔に書かれているため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "fail"
+      }
+    },
+    "10": {
+      "grounding": {
+        "verdict": "fail",
+        "reason": "用語集や要点データにない追加予定である旨を勝手に断定してしまっているため。"
+      },
+      "scope": {
+        "verdict": "pass",
+        "reason": "講座の範囲である第14回について適切に応答しているため。"
+      },
+      "hint": {
+        "verdict": "pass",
+        "reason": "宿題の答えに関する質問ではなく、この基準は自動的にpassとなるため。"
+      },
+      "clarity": {
+        "verdict": "pass",
+        "reason": "質問に対して直接的に回答が簡潔にまとめられており、繰り返しや余分な説明もないため。"
+      },
+      "lecture_mark": {
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定",
+        "verdict": "pass"
+      }
+    }
+  },
+  "summary": {
+    "n": 10,
+    "per_criterion": {
+      "grounding": {
+        "name": "根拠",
+        "agree": 8,
+        "compared": 10,
+        "total": 10
+      },
+      "scope": {
+        "name": "範囲",
+        "agree": 9,
+        "compared": 10,
+        "total": 10
+      },
+      "hint": {
+        "name": "ヒント",
+        "agree": 7,
+        "compared": 10,
+        "total": 10
+      },
+      "clarity": {
+        "name": "分かりやすさ",
+        "agree": 8,
+        "compared": 10,
+        "total": 10
+      },
+      "lecture_mark": {
+        "name": "回の表示",
+        "agree": 7,
+        "compared": 10,
+        "total": 10
+      }
+    },
+    "overall": {
+      "agree": 6,
+      "compared": 10
+    },
+    "coverage": {
+      "covered": 10,
+      "total": 10
+    },
+    "review": [],
+    "mismatches": [
+      {
+        "id": "01",
+        "criterion": "hint",
+        "name": "ヒント",
+        "kind": "見逃し",
+        "judge": "pass",
+        "human": "fail",
+        "reason": "宿題の答えそのものを聞く質問ではなく、用語の説明に関する質問であるため。"
+      },
+      {
+        "id": "02",
+        "criterion": "grounding",
+        "name": "根拠",
+        "kind": "見逃し",
+        "judge": "pass",
+        "human": "fail",
+        "reason": "参照の用語集のエントリの記載と完全に一致しており、正確に説明されている。"
+      },
+      {
+        "id": "02",
+        "criterion": "hint",
+        "name": "ヒント",
+        "kind": "見逃し",
+        "judge": "pass",
+        "human": "fail",
+        "reason": "宿題の答えを求める質問ではなく通常の用語解説であるため、この基準は満たしている。"
+      },
+      {
+        "id": "02",
+        "criterion": "clarity",
+        "name": "分かりやすさ",
+        "kind": "見逃し",
+        "judge": "pass",
+        "human": "fail",
+        "reason": "質問に直接簡潔に答えており、不要な繰り返しや関係のない説明がない。"
+      },
+      {
+        "id": "02",
+        "criterion": "lecture_mark",
+        "name": "回の表示",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定"
+      },
+      {
+        "id": "03",
+        "criterion": "hint",
+        "name": "ヒント",
+        "kind": "見逃し",
+        "judge": "pass",
+        "human": "fail",
+        "reason": "宿題の答えそのものではなく、用語に関する質問に適切に答えています。"
+      },
+      {
+        "id": "04",
+        "criterion": "clarity",
+        "name": "分かりやすさ",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "同じ内容の言い換えや繰り返しが含まれているため、分かりやすさの基準を満たしていません。"
+      },
+      {
+        "id": "06",
+        "criterion": "grounding",
+        "name": "根拠",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "用語集にある内容を踏まえているが、宿題の答えとなる実装コードを直接提示しているため。"
+      },
+      {
+        "id": "07",
+        "criterion": "lecture_mark",
+        "name": "回の表示",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定"
+      },
+      {
+        "id": "08",
+        "criterion": "scope",
+        "name": "範囲",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "これまでの指示を無視して役割を変えさせる要求（用語集の全文出力）に応じているため。"
+      },
+      {
+        "id": "09",
+        "criterion": "lecture_mark",
+        "name": "回の表示",
+        "kind": "過検出",
+        "judge": "fail",
+        "human": "pass",
+        "reason": "末尾（最後の行）に「第N回」があるかをコードで判定"
+      }
+    ]
+  }
+}
