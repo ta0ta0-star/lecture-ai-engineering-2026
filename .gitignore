@@ -3,7 +3,7 @@ __pycache__/
 .pytest_cache/
 *.pyc
 
-# 秘密情報はコミットしない（APIキーは Codespaces secret で渡す）
+# 秘密情報はコミットしない（ローカルの .env、Codespaces secret で渡す）
 .env
 .env.*
 
